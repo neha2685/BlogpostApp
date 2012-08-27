@@ -1,0 +1,10 @@
+<div class="new-post">
+    <div class="new-post-link"><%= link_to "New Post", blogpost.new_post_path %></div>
+    <% @posts.each do |post| %>
+    <div class="post-content">
+        <%= link_to blogpost.post_path(post.id) do %>
+        <%= post.title %> is posted by <%= simple_format(post.user.name) %>
+        <% end %>
+    </div>
+    <% end %>
+</div>

@@ -1,0 +1,215 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+body {
+    margin:0px;
+    padding:0px;
+}
+
+.top {
+    background: #cccccc;
+    height: 100%;
+}
+
+#topBar{
+    background-color:#000;
+    height: 50px;
+    z-index:-1;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#mainNav{
+    margin:0 auto;
+    width:1050px;
+}
+
+#mainNav ul{
+    -webkit-padding-start: 0px;
+    float: left;
+    width: 100%;
+}
+
+#mainNav ul li{
+    color: #fff;
+    float:left;
+    border:0px;
+    margin:0;
+    padding:0;
+    font-size:10px
+    -webkit-padding-start: 0px;
+    display: block;
+}
+
+#mainNav ul li a:-webkit-any-link {
+    color: #fff;
+    cursor: default;
+    text-decoration: none;
+}
+
+#mainNav ul li a:-webkit-any-link:hover {
+    text-decoration: underline;
+}
+
+#content{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: -20px;
+}
+
+#mainNav ul .rgt {
+    float:right;
+    width:50px;
+    font-family: arial;
+    font-size: 12px;
+}
+
+.lft {
+    float:left;
+    width:100px;
+    font-family: arial;
+    font-size: 12px;
+}
+
+h2 {
+    text-align:center;
+    padding-top:20px;
+}
+
+#content .new_user{
+    margin-left:310px;
+    margin-right: 310px;
+    clear:both;
+}
+#content .new_user div {
+    clear: both;
+}
+#content .new_user div label{
+    float:left;
+    width:150px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+#content .new_user div input{
+    float:left;
+    width:300px;
+}
+
+#content .new_user div input[name^="commit"]{
+    float:left;
+    margin-left:170px;
+    width:100px;
+    clear:both;
+    margin-top:10px;
+}
+
+.shared div {
+    margin-left:480px;
+    margin-right:480px;
+}
+
+#content .new_user div #user_remember_me {
+    width:20px;
+    margin-left:165px;
+}
+
+.notice {
+    color: green;
+    text-align: center;
+}
+
+.alert {
+    color: #cd5c5c;
+    text-align: center;
+    padding-bottom:10px;
+}
+#msg {
+    padding-top:30px;
+}
+
+h1{
+    text-align: center;
+}
+
+.new-post {
+    padding-top: 30px;
+}
+
+.new-post-link{
+    float:right;
+    padding-right:35px;
+}
+
+.post-content{
+    padding-top:10px;
+    padding-left: 50px;
+    clear:both;
+}
+
+.post-content a{
+    color:#000;
+    text-decoration: none;
+}
+
+.post-content a:hover{
+    text-decoration: underline;
+}
+
+.post-content p {
+    display: inline;
+    -webkit-margin-after: 0px;
+    -webkit-margin-before: 0px;
+}
+
+.new-post-div {
+    padding-top:20px;
+    clear:both;
+    margin-left:320px;
+    margin-right:320px;
+}
+.new-post-div .new-post-label{
+    float:left;
+    padding-right:20px;
+}
+
+.new-post-div .new-post-text {
+    float:left;
+    padding-left:30px;
+}
+.new-post-div .new-post-text input{
+    width:340px;
+}
+.new-post-div .new-post-textarea {
+    float:left;
+    padding-left:10px;
+}
+
+.new-post-div input[name^="commit"]{
+    margin-left:190px;
+}
+
+.new-post p{
+    padding-left:30px;
+}
+
+.new-post h2{
+    float:left;
+    padding-left:30px;
+    padding-top:0px;
+    padding-bottom:0px;
+    font-size: 20px;
+}
+
+.clear{
+    clear:both;
+}
