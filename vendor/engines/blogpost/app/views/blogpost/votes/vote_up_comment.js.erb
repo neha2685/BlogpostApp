@@ -1,7 +1,7 @@
-<% if @notice.blank? %>
+<% if @notice2.blank? %>
 <% end %>
 
-<% unless @id.blank? %>
-$("#post-votes-comments-<%= @id %> .votes").html('Votes (<%= @count %>)');
-$("#post-votes-comments-<%= @id %> .like-post").html('');
+<% unless @id2.blank? %>
+$("#post-votes-comments-<%= @id2 %> .votes").html('Votes (<%= @count2 %>)');
+$("#post-votes-comments-<%= @id2 %> .like-comment").html('');
 <% end %>
