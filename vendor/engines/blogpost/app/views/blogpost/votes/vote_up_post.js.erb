@@ -1,0 +1,6 @@
+<% if @notice.blank? %>
+<% end %>
+
+<% unless @id.blank? %>
+$("#post-votes-comments-<%= @id %> .votes").html('Votes (<%= @count %>)');
+<% end %>

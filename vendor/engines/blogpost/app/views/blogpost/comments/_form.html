@@ -1,9 +1,6 @@
-<%= form_for([@post.id, @post.comments.build]) do |f| %>
-<div class="field">
-    <%= f.label :body %>
-    <%= f.text_area :body %>
+<%= form_for(@comment,:url=>post_comments_path(@post,@comment), :method=>:post) do |f| %>
+<div class="comment-text-area">
+    <%= f.text_area :body, :class => 'text-area'%>
 </div>
-<div class="actions">
-    <%= f.submit %>
-</div>
+<%= f.submit 'Post Comment' %>
 <% end %>

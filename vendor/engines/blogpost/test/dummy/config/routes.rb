@@ -1,4 +1,3 @@
 Rails.application.routes.draw do
-
-  #mount Blogpost::Engine => "/blogpost"
+  mount Blogpost::Engine, :at => "blog"
 end
