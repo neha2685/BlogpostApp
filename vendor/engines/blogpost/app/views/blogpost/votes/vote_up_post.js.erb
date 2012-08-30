@@ -3,4 +3,5 @@
 
 <% unless @id.blank? %>
 $("#post-votes-comments-<%= @id %> .votes").html('Votes (<%= @count %>)');
+$("#post-votes-comments-<%= @id %> .like-post").html('');
 <% end %>

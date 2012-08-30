@@ -7,10 +7,10 @@
         posted by: <%= c.user.name %> on <%= date?(c.created_at) %> at <%= time?(c.created_at) %>
     </div>
     <div class="post-votes-comments-<%= c.id %>">
-        <span>Votes (<%= c.votes.count %>)</span>
+        <span class="votes">Votes (<%= c.votes.count %>) | </span>
         <% if votedComment?(c.id) %>
         <% else %>
-        | <span class="like-post"><%= link_to "Vote", blogpost.vote_up_comment_path(c.id), :remote => true %></span>
+        <span class="like-post"><%= link_to "Vote", blogpost.vote_up_comment_path(c.id), :remote => true %></span>
         <% end %>
     </div>
 </div>

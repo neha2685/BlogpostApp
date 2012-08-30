@@ -6,9 +6,7 @@ module Blogpost
       @post = Post.find(params[:id])
 
       if @post.votes.exists?(:user_id => current_user.id)
-        puts(current_user.id)
         @notice = 'You already voted'
-        puts(@notice)
       else
         a = Blogpost::Vote.new
         a.votable = @post

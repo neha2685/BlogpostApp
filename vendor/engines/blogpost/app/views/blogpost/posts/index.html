@@ -18,10 +18,10 @@
             </div>
             <div id="post-votes-comments-<%= post.id %>">
                 <span class="votes">Votes (<%= post.votes.count %>)</span> |
-                <span>Comments (<%= post.comments.count %>)</span>
+                <span>Comments (<%= post.comments.count %>) | </span>
                 <% if votedPost?(post.id) %>
                 <% else %>
-                | <span class="like-post"><%= link_to "Vote", vote_up_post_path(post.id), :remote => true %></span>
+                <span class="like-post"><%= link_to "Vote", vote_up_post_path(post.id), :remote => true %></span>
                 <% end %>
             </div>
         </div>

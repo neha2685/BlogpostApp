@@ -30,11 +30,5 @@ module Blogpost
       @comment = Blogpost::Comments.new
     end
 
-    def destroy
-      @post = Post.find(params[:id])
-      @post.destroy
-
-      redirect_to :action => :index
-    end
   end
 end
